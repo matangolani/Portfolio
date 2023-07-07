@@ -1,18 +1,47 @@
 h1{
     display: flex;
-    justify-content: left;
-    margin-left: 20px;
-    margin-top: 80px;
+    align-self: flex-start;
+    margin-left: 80px;
     color: rgb(231, 230, 163);
     font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex;
 }
 
 body{
     background-color: #172554;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 3px darkgray;
+}
+
+#navLinks{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 30px;;
+}
+
+.navLink{
+    color: antiquewhite;
+    font-size: 24px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    
+}
+
+.navLink:hover{
+    text-decoration: underline antiquewhite;
+}
+
 #projects{
-    margin-top: 200px;
+    position:relative;
+    margin-top: 100px;
     display: grid;
     grid-auto-flow: column;
     column-gap: 50px;
@@ -20,17 +49,35 @@ body{
 
 }
 
-p{
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectBox{
+    transition: 0.5s;
+    border: 3px solid black;
+    border-radius: 5px;
     height: 450px;
     width: 400px;
-    border: 1px solid black;
-    justify-self: center;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.projectBox:hover{
+    transition: 0.5s;
+    width: 450px;
+    height: 500px;
+}
+
 .projectTitle{
-    display: flex;
     color: antiquewhite;
     font-size: 32px;
+}
+
+.projectCaption{
+    color: antiquewhite;
+    font-size: 20px;
 }

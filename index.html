@@ -11,11 +11,39 @@
   </head>
   <body>
     <main>
-        <h1>Matan Golani</h1>  
+        <nav id = "nav">
+            <h1>Matan Golani</h1>  
+            <div id="navLinks">
+                <a href = "" class="navLink">Home</a>
+                <a href = "" class="navLink">About</a>
+                <a href = "" class="navLink">Resume</a>
+            </div>
+        </nav>
+        
         <div id="projects">
-            <p class = "projectTitle">Project #1</p>
-            <p class = "projectTitle">Project #2</p>
-            <p class = "projectTitle">Project #3</p>
+            <div class = "project" id = "project1">
+                <div class=" projectBox">
+                    <p class = "projectTitle">Project #1</p>
+                </div>  
+                <aside class = "projectCaption" id = "caption1" hidden>This project was made in Python</aside>
+            </div>
+            <div class ="project" id = "project2">
+                <div class=" projectBox">
+                    <p class = "projectTitle">Project #2</p>
+                </div>
+                <aside class = "projectCaption" id = "caption2"hidden>This project was made in Java</aside>
+
+            </div>
+            <div class = "project" id = "project3">
+                <div class=" projectBox">
+                    <p class = "projectTitle">Project #3</p>
+                </div>
+                <aside class = "projectCaption" id = "caption3" hidden>This project was made in C++</aside>
+
+            </div>
+            
+            
+            
         </div>
     </main>
 	<script src="main.js"></script>
