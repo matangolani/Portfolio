@@ -12,6 +12,10 @@ body{
     background-color: #172554;
 }
 
+main{
+    padding-bottom: 150px;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -58,7 +62,7 @@ nav{
 .projectBox{
     transition: 0.5s;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 15px;
     height: 450px;
     width: 400px;
     display: flex;
@@ -80,4 +84,36 @@ nav{
 .projectCaption{
     color: antiquewhite;
     font-size: 20px;
+}
+
+#cv{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 75px;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    color:antiquewhite;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 45%;
+    height: 150px;
+    text-align: center;
+}
+
+#contacts{
+    color: antiquewhite;
 }
